@@ -16,6 +16,10 @@ public class Basket {
      items.add(item);
     }
 
+    public void removeFirstItem() {
+      items.remove(0);
+    }
+
     public ArrayList<Item> checkAddedItems() {
      return this.items;
    }
