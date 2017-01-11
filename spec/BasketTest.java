@@ -15,4 +15,11 @@ public class BasketTest {
     assertEquals(basket.countItemsInBasket(), 0);
   }
 
+  @Test
+  public void testItemInBasket() {
+    Item item = new Item("Coke", 0.80);
+    basket.insert(item);
+    assertEquals(basket.checkAddedItems().get(0).getItemName(), "Coke");
+  }
+
 }

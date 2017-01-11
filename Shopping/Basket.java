@@ -12,7 +12,9 @@ public class Basket {
       return items.size();
     }
 
-    
+    public void insert(Item item) {
+     items.add(item);
+    }
 
     public ArrayList<Item> checkAddedItems() {
      return this.items;
