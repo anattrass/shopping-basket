@@ -44,4 +44,13 @@ public class BasketTest {
    assertEquals(basket.countItemsInBasket(), 0);
   }
 
+  @Test
+  public void testTotalBasketPrice() {
+    Item item1 = new Item("Coke", 0.80);
+    Item item2 = new Item("Milk", 1.00);
+    basket.insert(item1);
+    basket.insert(item2);
+    assertEquals(basket.getTotal(), 1.80, 00.1);
+  }
+
 }

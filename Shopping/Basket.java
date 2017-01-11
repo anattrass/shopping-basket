@@ -24,6 +24,14 @@ public class Basket {
       items.clear();
     }
 
+    public double getTotal(){
+      double total = 0;
+      for(Item item : this.items) {
+        total += item.getItemPrice();
+      }
+    return total;
+    }
+
     public ArrayList<Item> checkAddedItems() {
      return this.items;
    }
