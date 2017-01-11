@@ -36,4 +36,12 @@ public class Basket {
      return this.items;
    }
 
- }
+   public double tenPercentOff() {
+      double total = getTotal();
+      if (total >= 20.0) {
+        return total * 0.9;
+      }
+      return total;
+    }
+
+   }

@@ -53,4 +53,13 @@ public class BasketTest {
     assertEquals(basket.getTotal(), 1.80, 00.1);
   }
 
+  @Test
+  public void testTenPercentOff() {
+    Item item1 = new Item("Champagne", 17.80);
+    Item item2 = new Item("Block of Cheese", 3.00);
+    basket.insert(item1);
+    basket.insert(item2);
+    assertEquals(basket.tenPercentOff(), 18.72, 00.1);
+  }
+
 }
