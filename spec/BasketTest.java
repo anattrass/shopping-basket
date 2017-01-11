@@ -17,9 +17,11 @@ public class BasketTest {
 
   @Test
   public void testItemInBasket() {
-    Item item = new Item("Coke", 0.80);
-    basket.insert(item);
-    assertEquals(basket.checkAddedItems().get(0).getItemName(), "Coke");
+    Item item1 = new Item("Coke", 0.80);
+    Item item2 = new Item("Milk", 1.00);
+    basket.insert(item1);
+    basket.insert(item2);
+    assertEquals(basket.checkAddedItems().get(1).getItemName(), "Milk");
   }
 
 }
