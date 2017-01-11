@@ -12,6 +12,8 @@ public class Basket {
       return items.size();
     }
 
+    
+
     public ArrayList<Item> checkAddedItems() {
      return this.items;
    }
