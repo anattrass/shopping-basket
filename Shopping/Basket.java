@@ -20,6 +20,10 @@ public class Basket {
       items.remove(0);
     }
 
+    public void emptyBasket() {
+      items.clear();
+    }
+
     public ArrayList<Item> checkAddedItems() {
      return this.items;
    }
